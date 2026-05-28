@@ -29,7 +29,7 @@ The `metadata-api` (located in the parent directory) consumes this catalog. It s
 - `jsonpath_multiple`: Extracts all matching values as a list (useful for `creators`).
 - `ncbi`: Given an NCBI taxonomy URL (via `path`), it fetches the page and extracts the species name from the `ncbi_taxname` meta tag.
 
-The API expects the mapper to provide the following fields: `theme`, `publisher_name`, `publisher_url`, `contact_name`, `contact_email`, `species`, `year_begin`, `year_end`, `spatial`, `creators`, and `creators_urls`.
+The API expects the mapper to provide the following fields: `theme`, `publisher_name`, `publisher_url`, `contact_name`, `contact_email`, `year_begin`, `year_end`, `spatial`, `creators`, and `creators_urls`. The `species` field is optional. In `mapper.json`, `theme` should be a human-readable literal name rather than a URL.
 
 ## Workflows
 

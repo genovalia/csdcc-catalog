@@ -5,7 +5,7 @@
   "en": {
     "theme": {
       "type": "literal", // literal: the value is a string provided directly here.
-      "value": ""
+      "value": "TEMPLATE_THEME_EN"
     },
     "publisher": {
       "name": {
@@ -27,11 +27,13 @@
         "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'"
       }
     },
+    /*
     "species": {
       // ncbi: extracts a URL from dcat.json via JSONPath, fetches the page, and retrieves the 'ncbi_taxname' meta tag.
       "type": "ncbi",
       "path": "'dcat:theme'" // Example: if dcat:theme is an NCBI taxonomy URL
     },
+    */
     "temporal": {
       "year_begin": {
         "type": "jsonpath",
@@ -70,7 +72,7 @@
     },
     "theme": {
       "type": "literal",
-      "value": ""
+      "value": "TEMPLATE_THEME_FR"
     },
     "publisher": {
       "name": { "type": "jsonpath", "path": "'dcterms:publisher'.'foaf:name'" },
@@ -80,10 +82,12 @@
       "name": { "type": "jsonpath", "path": "'dcat:contactPoint'.'vcard:fn'" },
       "email": { "type": "jsonpath", "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'" }
     },
+    /*
     "species": {
       "type": "literal",
       "value": ""
     },
+    */
     "temporal": {
       "year_begin": { "type": "jsonpath", "path": "'dcterms:temporal'.'time:hasBeginning'.'time:inXSDgYear'" },
       "year_end": { "type": "jsonpath", "path": "'dcterms:temporal'.'time:hasEnd'.'time:inXSDgYear'" }

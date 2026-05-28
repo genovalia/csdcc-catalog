@@ -137,6 +137,10 @@ def create_dataset_interactive():
     # 3. Create Files
     os.makedirs(dataset_id)
     
+    # Theme name for mapper
+    theme_name_en = questionary.text("Theme Name (English, e.g. Crop Rotation):").ask()
+    theme_name_fr = questionary.text("Theme Name (French, e.g. Rotation des cultures):").ask()
+
     # Load template dcat
     with open("templates/dcat.jsonc", "r") as f:
         # Simple removal of comments for json loading if needed, 
@@ -171,10 +175,12 @@ def create_dataset_interactive():
     shutil.copy("templates/mapper.jsonc", os.path.join(dataset_id, "mapper.json"))
     shutil.copy("templates/oca.json", os.path.join(dataset_id, "oca.json"))
     
-    # Update mapper ID
+    # Update mapper ID and themes
     with open(os.path.join(dataset_id, "mapper.json"), "r") as f:
         mapper_content = f.read()
     mapper_content = mapper_content.replace("TEMPLATE_ID", dataset_id)
+    mapper_content = mapper_content.replace("TEMPLATE_THEME_EN", theme_name_en)
+    mapper_content = mapper_content.replace("TEMPLATE_THEME_FR", theme_name_fr)
     with open(os.path.join(dataset_id, "mapper.json"), "w") as f:
         f.write(mapper_content)
 

@@ -3,7 +3,7 @@
   "en": {
     "theme": {
       "type": "literal",
-      "value": "http://purl.obolibrary.org/obo/OHMI_0000001"
+      "value": "host-microbiome interaction"
     },
     "publisher": {
       "name": {
@@ -24,10 +24,6 @@
         "type": "jsonpath",
         "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'"
       }
-    },
-    "species": {
-      "type": "literal",
-      "value": "host-microbiome interaction"
     },
     "temporal": {
       "year_begin": {
@@ -64,7 +60,7 @@
     },
     "theme": {
       "type": "literal",
-      "value": "http://purl.obolibrary.org/obo/OHMI_0000001"
+      "value": "interaction hôte-microbiome"
     },
     "publisher": {
       "name": {
@@ -85,10 +81,6 @@
         "type": "jsonpath",
         "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'"
       }
-    },
-    "species": {
-      "type": "literal",
-      "value": "interaction hôte-microbiome"
     },
     "temporal": {
       "year_begin": {

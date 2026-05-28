@@ -3,7 +3,7 @@
   "en": {
     "theme": {
       "type": "literal",
-      "value": "https://id.nlm.nih.gov/mesh/M0508691.html"
+      "value": "Microbiome"
     },
     "publisher": {
       "name": {
@@ -24,10 +24,6 @@
         "type": "jsonpath",
         "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'"
       }
-    },
-    "species": {
-      "type": "literal",
-      "value": "Microbiome"
     },
     "temporal": {
       "year_begin": {
@@ -64,7 +60,7 @@
     },
     "theme": {
       "type": "literal",
-      "value": "https://id.nlm.nih.gov/mesh/M0508691.html"
+      "value": "Microbiome"
     },
     "publisher": {
       "name": {
@@ -85,10 +81,6 @@
         "type": "jsonpath",
         "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'"
       }
-    },
-    "species": {
-      "type": "literal",
-      "value": "Microbiome"
     },
     "temporal": {
       "year_begin": {

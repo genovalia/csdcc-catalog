@@ -3,7 +3,7 @@
   "en": {
     "theme": {
       "type": "literal",
-      "value": "http://purl.obolibrary.org/obo/AGRO_00000469"
+      "value": "field pea genomics"
     },
     "publisher": {
       "name": {
@@ -24,10 +24,6 @@
         "type": "jsonpath",
         "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'"
       }
-    },
-    "species": {
-      "type": "literal",
-      "value": "crop rotation"
     },
     "temporal": {
       "year_begin": {
@@ -64,7 +60,7 @@
     },
     "theme": {
       "type": "literal",
-      "value": "http://purl.obolibrary.org/obo/AGRO_00000469"
+      "value": "génomique du pois de plein champ"
     },
     "publisher": {
       "name": {
@@ -85,10 +81,6 @@
         "type": "jsonpath",
         "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'"
       }
-    },
-    "species": {
-      "type": "literal",
-      "value": "rotation des cultures"
     },
     "temporal": {
       "year_begin": {

@@ -3,7 +3,7 @@
   "en": {
     "theme": {
       "type": "literal",
-      "value": "http://id.nlm.nih.gov/mesh/D003612"
+      "value": "Data Collection"
     },
     "publisher": {
       "name": {
@@ -24,10 +24,6 @@
         "type": "jsonpath",
         "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'"
       }
-    },
-    "species": {
-      "type": "literal",
-      "value": "Data Collection"
     },
     "temporal": {
       "year_begin": {
@@ -64,7 +60,7 @@
     },
     "theme": {
       "type": "literal",
-      "value": "http://id.nlm.nih.gov/mesh/D003612"
+      "value": "Collecte de données"
     },
     "publisher": {
       "name": {
@@ -85,10 +81,6 @@
         "type": "jsonpath",
         "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'"
       }
-    },
-    "species": {
-      "type": "literal",
-      "value": "Collecte de données"
     },
     "temporal": {
       "year_begin": {

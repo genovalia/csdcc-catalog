@@ -3,7 +3,7 @@
   "en": {
     "theme": {
       "type": "literal",
-      "value": "http://purl.obolibrary.org/obo/AGRO_00000426"
+      "value": "regulation of grazing"
     },
     "publisher": {
       "name": {
@@ -24,10 +24,6 @@
         "type": "jsonpath",
         "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'"
       }
-    },
-    "species": {
-      "type": "literal",
-      "value": "regulation of grazing"
     },
     "temporal": {
       "year_begin": {
@@ -64,7 +60,7 @@
     },
     "theme": {
       "type": "literal",
-      "value": "http://purl.obolibrary.org/obo/AGRO_00000426"
+      "value": "régulation du pâturage"
     },
     "publisher": {
       "name": {
@@ -85,10 +81,6 @@
         "type": "jsonpath",
         "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'"
       }
-    },
-    "species": {
-      "type": "literal",
-      "value": "régulation du pâturage"
     },
     "temporal": {
       "year_begin": {

@@ -51,11 +51,11 @@
     "creators": {
       // jsonpath_multiple: extracts ALL matching values from dcat.json as a list.
       "type": "jsonpath_multiple",
-      "path": "'dcterms:creator'.'foaf:name'"
+      "path": "'prov:qualifiedAttribution'[*].'prov:agent'.'foaf:name'"
     },
     "creators_urls": {
       "type": "jsonpath_multiple",
-      "path": "'dcterms:creator'.'@id'"
+      "path": "'prov:qualifiedAttribution'[*].'prov:agent'.'@id'"
     },
     // Direct link to the access request document.
     "access_request_url": "https://wagtail.apps.genovalia.ulaval.ca/documents/20/Annexe_partage_donnees_sept2025.pdf"
@@ -98,11 +98,11 @@
     },
     "creators": {
       "type": "jsonpath_multiple",
-      "path": "'dcterms:creator'.'foaf:name'"
+      "path": "'prov:qualifiedAttribution'[*].'prov:agent'.'foaf:name'"
     },
     "creators_urls": {
       "type": "jsonpath_multiple",
-      "path": "'dcterms:creator'.'@id'"
+      "path": "'prov:qualifiedAttribution'[*].'prov:agent'.'@id'"
     },
     "access_request_url": "https://wagtail.apps.genovalia.ulaval.ca/documents/20/Annexe_partage_donnees_sept2025.pdf"
   }

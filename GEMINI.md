@@ -17,6 +17,8 @@ Every dataset directory MUST contain the following files:
 1. `dcat.json`: The core metadata file describing the dataset.
    - Must validate against DCAT-AP 3.0.1 Recommendations.
    - Uses JSON-LD syntax (`@context`, `@id`, `@type`, etc.).
+   - `dcterms:creator`: MUST be the lead **Organization** responsible for the dataset.
+   - `prov:qualifiedAttribution`: Used for **Individual** contributors (People). Each entry includes a `prov:agent` (the person) and a `dcat:hadRole`.
 2. `mapper.json`: Handles the mapping between the raw `dcat.json` data and presentation/UI layers.
    - Uses JSONPath expressions (e.g., `{'type': 'jsonpath', 'path': "'dcterms:publisher'.'foaf:name'"}`) to extract values from `dcat.json`.
    - Supports internationalization (e.g., `"en"`, `"fr"` blocks).

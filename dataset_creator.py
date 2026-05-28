@@ -105,35 +105,64 @@ def create_dataset_interactive():
     keywords_raw = questionary.text("Keywords (comma separated):").ask()
     keywords = [k.strip() for k in keywords_raw.split(",")] if keywords_raw else []
 
-    # Creator
+    # Creator (Organization)
     creators_list = get_existing_values("dcterms:creator")
-    # Handle both single and multiple creators if they exist
-    creators_flat = []
-    seen_creators = set()
+    organizations_flat = []
+    seen_orgs = set()
     for c in creators_list:
-        if isinstance(c, list):
-            for sub_c in c:
-                s = json.dumps(sub_c, sort_keys=True)
-                if s not in seen_creators:
-                    creators_flat.append(sub_c)
-                    seen_creators.add(s)
-        else:
+        if isinstance(c, dict) and c.get("@type") == "foaf:Organization":
             s = json.dumps(c, sort_keys=True)
-            if s not in seen_creators:
-                creators_flat.append(c)
-                seen_creators.add(s)
+            if s not in seen_orgs:
+                organizations_flat.append(c)
+                seen_orgs.add(s)
 
-    cre_choices = [questionary.Choice(title=c.get("foaf:name", str(c)), value=c) for c in creators_flat]
-    cre_choices.append(questionary.Choice(title="[Enter new...]", value="NEW"))
-    creator = questionary.select("Creator:", choices=cre_choices).ask()
+    org_choices = [questionary.Choice(title=c.get("foaf:name", str(c)), value=c) for c in organizations_flat]
+    org_choices.append(questionary.Choice(title="[Enter new...]", value="NEW"))
+    creator = questionary.select("Lead Organization (Creator):", choices=org_choices).ask()
     if creator == "NEW":
         creator = {
-            "@id": questionary.text("Creator ID (e.g. ORCID):").ask(),
-            "@type": "foaf:Person",
-            "foaf:name": questionary.text("Creator Name:").ask(),
-            "foaf:mbox": f"mailto:{questionary.text('Creator Email:').ask()}"
+            "@id": questionary.text("Organization ID (URL):").ask(),
+            "@type": "foaf:Organization",
+            "foaf:name": questionary.text("Organization Name:").ask(),
+            "foaf:homepage": questionary.text("Organization Homepage:").ask()
         }
 
+    # Qualified Attribution (People)
+    attributions = []
+    while questionary.confirm("Add an individual contributor (Qualified Attribution)?").ask():
+        # Suggest existing people
+        existing_attributions = get_existing_values("prov:qualifiedAttribution")
+        people_flat = []
+        seen_people = set()
+        for attr_list in existing_attributions:
+            if isinstance(attr_list, list):
+                for attr in attr_list:
+                    agent = attr.get("prov:agent")
+                    if agent:
+                        s = json.dumps(agent, sort_keys=True)
+                        if s not in seen_people:
+                            people_flat.append(agent)
+                            seen_people.add(s)
+        
+        person_choices = [questionary.Choice(title=p.get("foaf:name", str(p)), value=p) for p in people_flat]
+        person_choices.append(questionary.Choice(title="[Enter new...]", value="NEW"))
+        person = questionary.select("Select Person:", choices=person_choices).ask()
+        
+        if person == "NEW":
+            person = {
+                "@id": questionary.text("Person ID (e.g. ORCID):").ask(),
+                "@type": "foaf:Person",
+                "foaf:name": questionary.text("Person Name:").ask()
+            }
+        
+        role = questionary.text("Role (e.g. principalInvestigator):", default="principalInvestigator").ask()
+        
+        attributions.append({
+            "@type": "prov:Attribution",
+            "prov:agent": person,
+            "dcat:hadRole": role
+        })
+    
     # 3. Create Files
     os.makedirs(dataset_id)
     
@@ -156,6 +185,7 @@ def create_dataset_interactive():
     dcat["dcat:contactPoint"] = contact
     dcat["dcat:keyword"] = keywords
     dcat["dcterms:creator"] = creator
+    dcat["prov:qualifiedAttribution"] = attributions
     
     # Optional fields with defaults or prompts
     dcat["dcterms:identifier"] = questionary.text("Identifier (e.g. DOI):").ask() or ""

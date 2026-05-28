@@ -143,10 +143,12 @@ def create_dataset(
 
 def create_dataset_interactive():
     # 1. Dataset ID
-    dataset_id = questionary.text("Dataset ID (e.g., bostau2):").ask()
-    if not dataset_id:
+    dataset_id_raw = questionary.text("Dataset ID (e.g., bostau2):").ask()
+    if not dataset_id_raw:
         print("Dataset ID is required.")
         return
+    
+    dataset_id = dataset_id_raw.replace("-", "")
 
     if os.path.exists(dataset_id):
         print(f"Directory {dataset_id} already exists.")

@@ -3,7 +3,7 @@
   "en": {
     "theme": {
       "type": "literal",
-      "value": "Theme Placeholder"
+      "value": "host-microbiome interaction"
     },
     "publisher": {
       "name": {
@@ -60,7 +60,7 @@
     },
     "theme": {
       "type": "literal",
-      "value": "Espace réservé au thème"
+      "value": "interaction hôte-microbiome"
     },
     "publisher": {
       "name": {

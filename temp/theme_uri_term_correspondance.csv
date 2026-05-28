@@ -1,0 +1,26 @@
+﻿theme1;name1;theme2;name2
+http://purl.obolibrary.org/obo/AGRO_00000469;crop rotation;https://id.nlm.nih.gov/mesh/M0508691.html;microbiome
+http://purl.obolibrary.org/obo/OHMI_0000001;host-microbiome interaction;http://id.nlm.nih.gov/mesh/D000069599;crop production
+http://purl.obolibrary.org/obo/OHMI_0000001;host-microbiome interaction;http://id.nlm.nih.gov/mesh/D000069599;crop production
+http://purl.obolibrary.org/obo/OHMI_0000001;host-microbiome interaction;http://id.nlm.nih.gov/mesh/D000069599;crop production
+http://purl.obolibrary.org/obo/AGRO_00000426;regulation of grazing;https://id.nlm.nih.gov/mesh/M0508691.html;microbiome
+http://purl.obolibrary.org/obo/AGRO_00000426;regulation of grazing;https://id.nlm.nih.gov/mesh/M0508691.html;microbiome
+http://purl.obolibrary.org/obo/AGRO_00000426;regulation of grazing;https://id.nlm.nih.gov/mesh/M0508691.html;microbiome
+http://id.nlm.nih.gov/mesh/D00009690;In Vitro meat;NA;NA
+http://id.nlm.nih.gov/mesh/D00009690;In Vitro meat;NA;NA
+http://id.nlm.nih.gov/mesh/D00009690;In Vitro meat;NA;NA
+http://id.nlm.nih.gov/mesh/D00009690;In Vitro meat;NA;NA
+http://id.nlm.nih.gov/mesh/D00009690;In Vitro meat;NA;NA
+http://id.nlm.nih.gov/mesh/D00009690;In Vitro meat;NA;NA
+http://id.nlm.nih.gov/mesh/D00009690;In Vitro meat;NA;NA
+http://purl.obolibrary.org/obo/ENVO_01001206;grassland ecosystem;http://purl.obolibrary.org/obo/ENVO_01000629;climate change
+http://purl.obolibrary.org/obo/ENVO_01001206;grassland ecosystem;http://purl.obolibrary.org/obo/ENVO_01000629;climate change
+https://id.nlm.nih.gov/mesh/M0508691.html;microbiome;http://purl.obolibrary.org/obo/ENVO_03600006;food waste
+http://id.nlm.nih.gov/mesh/D003612;dairying;http://id.nlm.nih.gov/mesh/D000074382;greenhouse gases
+http://id.nlm.nih.gov/mesh/D003612;dairying;http://id.nlm.nih.gov/mesh/D000074382;greenhouse gases
+http://id.nlm.nih.gov/mesh/D003612;dairying;http://id.nlm.nih.gov/mesh/D000074382;greenhouse gases
+http://id.nlm.nih.gov/mesh/D003612;dairying;http://id.nlm.nih.gov/mesh/D000074382;greenhouse gases
+http://id.nlm.nih.gov/mesh/D003612;dairying;http://id.nlm.nih.gov/mesh/D000074382;greenhouse gases
+http://id.nlm.nih.gov/mesh/D003612;dairying;http://id.nlm.nih.gov/mesh/D000074382;greenhouse gases
+http://purl.obolibrary.org/obo/AGRO_00000469;crop rotation;https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3803/;Fabaceae
+http://id.nlm.nih.gov/mesh/D000092783;diversity, equity, inclusion;http://aims.fao.org/aos/agrovoc/c_35f3dec1;cell-based food production

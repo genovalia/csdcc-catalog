@@ -3,7 +3,7 @@
   "en": {
     "theme": {
       "type": "literal",
-      "value": "TEMPLATE_THEME_EN"
+      "value": "crop rotation"
     },
     "publisher": {
       "name": {
@@ -60,7 +60,7 @@
     },
     "theme": {
       "type": "literal",
-      "value": "TEMPLATE_THEME_FR"
+      "value": "rotation des cultures"
     },
     "publisher": {
       "name": {

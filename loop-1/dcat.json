@@ -1,0 +1,82 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@id": "",
+  "@type": "dcat:Dataset",
+  "dcterms:identifier": "",
+  "dcterms:language": "en",
+  "dcterms:title": "Loop: Environmental DNA",
+  "dcterms:description": "This schema is designed for environmental or agricultural monitoring datasets. It includes several key attributes such as sample identifiers, sample types, geographic coordinates (latitude and longitude), and site descriptions. The schema also defines metadata fields for data validation, such as required entry values, accepted formats, and character encoding. It aims to support structured data collection and ensure interoperability across platforms through consistent attribute naming and semantic annotations.",
+  "dcat:landingPage": "",
+  "dcterms:publisher": {
+    "@id": "https://csdcc.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "CSDCC",
+    "foaf:homepage": "https://csdcc.ca/"
+  },
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "CSDCC",
+    "vcard:hasEmail": {
+      "@id": "mailto:info@csdcc.ca"
+    }
+  },
+  "dcat:keyword": [
+    "Loop",
+    "circular economy",
+    "food waste valorization",
+    "microbiome genomics",
+    "greenhouse gas mitigation"
+  ],
+  "dcat:theme": "https://id.nlm.nih.gov/mesh/M0508691.html",
+  "dcat:distribution": [],
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2023"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2027"
+    }
+  },
+  "dcterms:spatial": "Canada",
+  "dcterms:version": "0.1",
+  "dcterms:license": "",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/RestrictedAccess",
+  "dcterms:creator": {
+    "@type": "foaf:Organization",
+    "foaf:name": "Loop",
+    "foaf:homepage": "https://genomecanada.ca/project/omics-to-close-the-loop-optimized-amendment-from-local-agri-food-waste-for-carbon-footprint-reduction/",
+    "@id": "https://genomecanada.ca/project/omics-to-close-the-loop-optimized-amendment-from-local-agri-food-waste-for-carbon-footprint-reduction/"
+  },
+  "prov:qualifiedAttribution": [
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0001-6759-6484",
+        "@type": "foaf:Person",
+        "foaf:name": "Joan Laur"
+      },
+      "dcat:hadRole": "principalInvestigator"
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0003-0849-3666",
+        "@type": "foaf:Person",
+        "foaf:name": "Louise Hénault-Ethier"
+      },
+      "dcat:hadRole": "principalInvestigator"
+    }
+  ]
+}

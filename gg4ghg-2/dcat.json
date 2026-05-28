@@ -1,0 +1,82 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@id": "",
+  "@type": "dcat:Dataset",
+  "dcterms:identifier": "",
+  "dcterms:language": "en",
+  "dcterms:title": "GG4GHG: Soil chemistry data",
+  "dcterms:description": "A schema to describe soil chemistry measurements for GG4GHG data.",
+  "dcat:landingPage": "",
+  "dcterms:publisher": {
+    "@id": "https://csdcc.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "CSDCC",
+    "foaf:homepage": "https://csdcc.ca/"
+  },
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "CSDCC",
+    "vcard:hasEmail": {
+      "@id": "mailto:info@csdcc.ca"
+    }
+  },
+  "dcat:keyword": [
+    "GG4GHG",
+    "grassland genomics",
+    "carbon sequestration",
+    "greenhouse gas mitigation",
+    "soil microbiome"
+  ],
+  "dcat:theme": "http://purl.obolibrary.org/obo/ENVO_01001206",
+  "dcat:distribution": [],
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2023"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2027"
+    }
+  },
+  "dcterms:spatial": "Canada",
+  "dcterms:version": "0.1",
+  "dcterms:license": "",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/RestrictedAccess",
+  "dcterms:creator": {
+    "@type": "foaf:Organization",
+    "foaf:name": "GG4GHG",
+    "foaf:homepage": "https://grassland-genomics.usask.ca/research-grant/2",
+    "@id": "https://grassland-genomics.usask.ca/research-grant/2"
+  },
+  "prov:qualifiedAttribution": [
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0001-5617-7524",
+        "@type": "foaf:Person",
+        "foaf:name": "Jonathan Bennett"
+      },
+      "dcat:hadRole": "principalInvestigator"
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0003-3497-0518",
+        "@type": "foaf:Person",
+        "foaf:name": "Sean Asselin"
+      },
+      "dcat:hadRole": "principalInvestigator"
+    }
+  ]
+}

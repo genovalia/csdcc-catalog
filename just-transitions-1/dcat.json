@@ -1,0 +1,91 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@id": "",
+  "@type": "dcat:Dataset",
+  "dcterms:identifier": "",
+  "dcterms:language": "en",
+  "dcterms:title": "Just Transitions: GENOME",
+  "dcterms:description": "Schema describing the social survey questionnaire.",
+  "dcat:landingPage": "",
+  "dcterms:publisher": {
+    "@id": "https://csdcc.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "CSDCC",
+    "foaf:homepage": "https://csdcc.ca/"
+  },
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "CSDCC",
+    "vcard:hasEmail": {
+      "@id": "mailto:info@csdcc.ca"
+    }
+  },
+  "dcat:keyword": [
+    "Just Transitions",
+    "agri-genomics technologies",
+    "social justice",
+    "climate change mitigation",
+    ""
+  ],
+  "dcat:theme": "http://id.nlm.nih.gov/mesh/D000092783",
+  "dcat:distribution": [],
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2023"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2027"
+    }
+  },
+  "dcterms:spatial": "Canada",
+  "dcterms:version": "0.1",
+  "dcterms:license": "",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/RestrictedAccess",
+  "dcterms:creator": {
+    "@type": "foaf:Organization",
+    "foaf:name": "Just Transitions",
+    "foaf:homepage": "https://www.ufv.ca/agrigenomics/",
+    "@id": "https://www.ufv.ca/agrigenomics/"
+  },
+  "prov:qualifiedAttribution": [
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0001-6038-960X",
+        "@type": "foaf:Person",
+        "foaf:name": "Evan Bowness"
+      },
+      "dcat:hadRole": "principalInvestigator"
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0001-5063-8430",
+        "@type": "foaf:Person",
+        "foaf:name": "Lenore Newman"
+      },
+      "dcat:hadRole": "principalInvestigator"
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0002-9843-4055",
+        "@type": "foaf:Person",
+        "foaf:name": "Stefania Pizzirani"
+      },
+      "dcat:hadRole": "principalInvestigator"
+    }
+  ]
+}

@@ -1,3 +1,148 @@
 {
-  "content": []
+  "content": [
+    {
+      "id": "benefit-1",
+      "mapper": "benefit-1/mapper.json",
+      "OCA": "benefit-1/oca.json",
+      "DCAT": "benefit-1/dcat.json"
+    },
+    {
+      "id": "benefit-2",
+      "mapper": "benefit-2/mapper.json",
+      "OCA": "benefit-2/oca.json",
+      "DCAT": "benefit-2/dcat.json"
+    },
+    {
+      "id": "benefit-3",
+      "mapper": "benefit-3/mapper.json",
+      "OCA": "benefit-3/oca.json",
+      "DCAT": "benefit-3/dcat.json"
+    },
+    {
+      "id": "cat-g-1",
+      "mapper": "cat-g-1/mapper.json",
+      "OCA": "cat-g-1/oca.json",
+      "DCAT": "cat-g-1/dcat.json"
+    },
+    {
+      "id": "cat-g-2",
+      "mapper": "cat-g-2/mapper.json",
+      "OCA": "cat-g-2/oca.json",
+      "DCAT": "cat-g-2/dcat.json"
+    },
+    {
+      "id": "cat-g-3",
+      "mapper": "cat-g-3/mapper.json",
+      "OCA": "cat-g-3/oca.json",
+      "DCAT": "cat-g-3/dcat.json"
+    },
+    {
+      "id": "ccm-1",
+      "mapper": "ccm-1/mapper.json",
+      "OCA": "ccm-1/oca.json",
+      "DCAT": "ccm-1/dcat.json"
+    },
+    {
+      "id": "ccm-2",
+      "mapper": "ccm-2/mapper.json",
+      "OCA": "ccm-2/oca.json",
+      "DCAT": "ccm-2/dcat.json"
+    },
+    {
+      "id": "ccm-3",
+      "mapper": "ccm-3/mapper.json",
+      "OCA": "ccm-3/oca.json",
+      "DCAT": "ccm-3/dcat.json"
+    },
+    {
+      "id": "ccm-4",
+      "mapper": "ccm-4/mapper.json",
+      "OCA": "ccm-4/oca.json",
+      "DCAT": "ccm-4/dcat.json"
+    },
+    {
+      "id": "ccm-5",
+      "mapper": "ccm-5/mapper.json",
+      "OCA": "ccm-5/oca.json",
+      "DCAT": "ccm-5/dcat.json"
+    },
+    {
+      "id": "ccm-6",
+      "mapper": "ccm-6/mapper.json",
+      "OCA": "ccm-6/oca.json",
+      "DCAT": "ccm-6/dcat.json"
+    },
+    {
+      "id": "ccm-7",
+      "mapper": "ccm-7/mapper.json",
+      "OCA": "ccm-7/oca.json",
+      "DCAT": "ccm-7/dcat.json"
+    },
+    {
+      "id": "gg4ghg-1",
+      "mapper": "gg4ghg-1/mapper.json",
+      "OCA": "gg4ghg-1/oca.json",
+      "DCAT": "gg4ghg-1/dcat.json"
+    },
+    {
+      "id": "gg4ghg-2",
+      "mapper": "gg4ghg-2/mapper.json",
+      "OCA": "gg4ghg-2/oca.json",
+      "DCAT": "gg4ghg-2/dcat.json"
+    },
+    {
+      "id": "loop-1",
+      "mapper": "loop-1/mapper.json",
+      "OCA": "loop-1/oca.json",
+      "DCAT": "loop-1/dcat.json"
+    },
+    {
+      "id": "ndgp-1",
+      "mapper": "ndgp-1/mapper.json",
+      "OCA": "ndgp-1/oca.json",
+      "DCAT": "ndgp-1/dcat.json"
+    },
+    {
+      "id": "ndgp-2",
+      "mapper": "ndgp-2/mapper.json",
+      "OCA": "ndgp-2/oca.json",
+      "DCAT": "ndgp-2/dcat.json"
+    },
+    {
+      "id": "ndgp-3",
+      "mapper": "ndgp-3/mapper.json",
+      "OCA": "ndgp-3/oca.json",
+      "DCAT": "ndgp-3/dcat.json"
+    },
+    {
+      "id": "ndgp-4",
+      "mapper": "ndgp-4/mapper.json",
+      "OCA": "ndgp-4/oca.json",
+      "DCAT": "ndgp-4/dcat.json"
+    },
+    {
+      "id": "ndgp-5",
+      "mapper": "ndgp-5/mapper.json",
+      "OCA": "ndgp-5/oca.json",
+      "DCAT": "ndgp-5/dcat.json"
+    },
+    {
+      "id": "ndgp-6",
+      "mapper": "ndgp-6/mapper.json",
+      "OCA": "ndgp-6/oca.json",
+      "DCAT": "ndgp-6/dcat.json"
+    },
+    {
+      "id": "peace-1",
+      "mapper": "peace-1/mapper.json",
+      "OCA": "peace-1/oca.json",
+      "DCAT": "peace-1/dcat.json"
+    },
+    {
+      "id": "just-transitions-1",
+      "mapper": "just-transitions-1/mapper.json",
+      "OCA": "just-transitions-1/oca.json",
+      "DCAT": "just-transitions-1/dcat.json"
+    }
+  ]
 }

@@ -1,0 +1,100 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@id": "",
+  "@type": "dcat:Dataset",
+  "dcterms:identifier": "",
+  "dcterms:language": "en",
+  "dcterms:title": "Leveraging Genomics To Achieve Dairy Net-Zero: MIR File Layout",
+  "dcterms:description": "Data schema for the pedigree file layout for the Leveraging Genomics To Achieve Dairy Net-Zero (NDGP).",
+  "dcat:landingPage": "",
+  "dcterms:publisher": {
+    "@id": "https://csdcc.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "CSDCC",
+    "foaf:homepage": "https://csdcc.ca/"
+  },
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "CSDCC",
+    "vcard:hasEmail": {
+      "@id": "mailto:info@csdcc.ca"
+    }
+  },
+  "dcat:keyword": [
+    "NDGP",
+    "dairy genomics",
+    "greenhouse gas mitigation",
+    "methane reduction",
+    "animal nutrition"
+  ],
+  "dcat:theme": "http://id.nlm.nih.gov/mesh/D003612",
+  "dcat:distribution": [],
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2023"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2027"
+    }
+  },
+  "dcterms:spatial": "Canada",
+  "dcterms:version": "0.1",
+  "dcterms:license": "",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/RestrictedAccess",
+  "dcterms:creator": {
+    "@type": "foaf:Organization",
+    "foaf:name": "Net-Zero Dairy Genome Project",
+    "foaf:homepage": "https://www.ndgp.ca/",
+    "@id": "https://www.ndgp.ca/"
+  },
+  "prov:qualifiedAttribution": [
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0001-6614-8890",
+        "@type": "foaf:Person",
+        "foaf:name": "Christine Baes"
+      },
+      "dcat:hadRole": "principalInvestigator"
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0003-2345-8842",
+        "@type": "foaf:Person",
+        "foaf:name": "Filippo Miglior"
+      },
+      "dcat:hadRole": "principalInvestigator"
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0002-6929-2027",
+        "@type": "foaf:Person",
+        "foaf:name": "Rachel Gervais"
+      },
+      "dcat:hadRole": "principalInvestigator"
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0003-4263-969X",
+        "@type": "foaf:Person",
+        "foaf:name": "Paul Stothard"
+      },
+      "dcat:hadRole": "principalInvestigator"
+    }
+  ]
+}

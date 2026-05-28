@@ -59,6 +59,88 @@ def prompt_complex_field(field_name: str, field_path: str, display_attr: str) ->
         return None 
     return result
 
+def create_dataset(
+    dataset_id: str,
+    title: str,
+    description: str,
+    publisher: Dict[str, Any],
+    contact: Dict[str, Any],
+    keywords: List[str],
+    creator: Dict[str, Any],
+    attributions: List[Dict[str, Any]],
+    theme_name_en: str,
+    theme_name_fr: str,
+    identifier: str = "",
+    theme_url: str = "",
+    spatial: str = "",
+    year_start: str = "",
+    year_end: str = ""
+):
+    """Core logic to create dataset files and update catalog.json."""
+    if os.path.exists(dataset_id):
+        print(f"Directory {dataset_id} already exists. Skipping.")
+        return
+
+    # 3. Create Files
+    os.makedirs(dataset_id)
+    
+    # Load template dcat
+    with open("templates/dcat.jsonc", "r") as f:
+        content = f.read()
+        
+    # Remove single line comments (start of line or after space)
+    import re
+    content = re.sub(r"^\s*//.*", "", content, flags=re.MULTILINE)
+    content = re.sub(r"\s+//.*", "", content)
+    dcat = json.loads(content)
+
+    # Update template with values
+    dcat["dcterms:title"] = title
+    dcat["dcterms:description"] = description
+    dcat["dcterms:publisher"] = publisher
+    dcat["dcat:contactPoint"] = contact
+    dcat["dcat:keyword"] = keywords
+    dcat["dcterms:creator"] = creator
+    dcat["prov:qualifiedAttribution"] = attributions
+    dcat["dcterms:identifier"] = identifier
+    dcat["dcat:theme"] = theme_url
+    dcat["dcterms:spatial"] = spatial
+    dcat["dcterms:temporal"]["time:hasBeginning"]["time:inXSDgYear"] = year_start
+    dcat["dcterms:temporal"]["time:hasEnd"]["time:inXSDgYear"] = year_end
+
+    # Write dcat.json
+    with open(os.path.join(dataset_id, "dcat.json"), "w") as f:
+        json.dump(dcat, f, indent=2)
+
+    # Copy mapper and oca
+    shutil.copy("templates/mapper.jsonc", os.path.join(dataset_id, "mapper.json"))
+    shutil.copy("templates/oca.json", os.path.join(dataset_id, "oca.json"))
+    
+    # Update mapper ID and themes
+    with open(os.path.join(dataset_id, "mapper.json"), "r") as f:
+        mapper_content = f.read()
+    mapper_content = mapper_content.replace("TEMPLATE_ID", dataset_id)
+    mapper_content = mapper_content.replace("TEMPLATE_THEME_EN", theme_name_en)
+    mapper_content = mapper_content.replace("TEMPLATE_THEME_FR", theme_name_fr)
+    with open(os.path.join(dataset_id, "mapper.json"), "w") as f:
+        f.write(mapper_content)
+
+    # 4. Update catalog.json
+    with open("catalog.json", "r") as f:
+        catalog = json.load(f)
+    
+    catalog["content"].append({
+        "id": dataset_id,
+        "mapper": f"{dataset_id}/mapper.json",
+        "OCA": f"{dataset_id}/oca.json",
+        "DCAT": f"{dataset_id}/dcat.json"
+    })
+    
+    with open("catalog.json", "w") as f:
+        json.dump(catalog, f, indent=2)
+
+    print(f"Successfully created dataset '{dataset_id}'")
+
 def create_dataset_interactive():
     # 1. Dataset ID
     dataset_id = questionary.text("Dataset ID (e.g., bostau2):").ask()
@@ -170,62 +252,26 @@ def create_dataset_interactive():
     theme_name_en = questionary.text("Theme Name (English, e.g. Crop Rotation):").ask()
     theme_name_fr = questionary.text("Theme Name (French, e.g. Rotation des cultures):").ask()
 
-    # Load template dcat
-    with open("templates/dcat.jsonc", "r") as f:
-        # Simple removal of comments for json loading if needed, 
-        # but we'll just construct the dict
-        template_lines = f.readlines()
-        clean_lines = [line for line in template_lines if not line.strip().startswith("//")]
-        dcat = json.loads("".join(clean_lines))
-
-    # Update template with values
-    dcat["dcterms:title"] = title
-    dcat["dcterms:description"] = description
-    dcat["dcterms:publisher"] = publisher
-    dcat["dcat:contactPoint"] = contact
-    dcat["dcat:keyword"] = keywords
-    dcat["dcterms:creator"] = creator
-    dcat["prov:qualifiedAttribution"] = attributions
-    
-    # Optional fields with defaults or prompts
-    dcat["dcterms:identifier"] = questionary.text("Identifier (e.g. DOI):").ask() or ""
-    dcat["dcat:theme"] = questionary.text("Theme (URL):").ask() or ""
-    dcat["dcterms:spatial"] = questionary.text("Spatial (GeoNames URL):").ask() or ""
-    
+    identifier = questionary.text("Identifier (e.g. DOI):").ask() or ""
+    theme_url = questionary.text("Theme (URL):").ask() or ""
+    spatial = questionary.text("Spatial (GeoNames URL):").ask() or ""
     year_start = questionary.text("Year Start:").ask()
     year_end = questionary.text("Year End:").ask()
-    dcat["dcterms:temporal"]["time:hasBeginning"]["time:inXSDgYear"] = year_start
-    dcat["dcterms:temporal"]["time:hasEnd"]["time:inXSDgYear"] = year_end
 
-    # Write dcat.json
-    with open(os.path.join(dataset_id, "dcat.json"), "w") as f:
-        json.dump(dcat, f, indent=2)
-
-    # Copy mapper and oca
-    shutil.copy("templates/mapper.jsonc", os.path.join(dataset_id, "mapper.json"))
-    shutil.copy("templates/oca.json", os.path.join(dataset_id, "oca.json"))
-    
-    # Update mapper ID and themes
-    with open(os.path.join(dataset_id, "mapper.json"), "r") as f:
-        mapper_content = f.read()
-    mapper_content = mapper_content.replace("TEMPLATE_ID", dataset_id)
-    mapper_content = mapper_content.replace("TEMPLATE_THEME_EN", theme_name_en)
-    mapper_content = mapper_content.replace("TEMPLATE_THEME_FR", theme_name_fr)
-    with open(os.path.join(dataset_id, "mapper.json"), "w") as f:
-        f.write(mapper_content)
-
-    # 4. Update catalog.json
-    with open("catalog.json", "r") as f:
-        catalog = json.load(f)
-    
-    catalog["content"].append({
-        "id": dataset_id,
-        "mapper": f"{dataset_id}/mapper.json",
-        "OCA": f"{dataset_id}/oca.json",
-        "DCAT": f"{dataset_id}/dcat.json"
-    })
-    
-    with open("catalog.json", "w") as f:
-        json.dump(catalog, f, indent=2)
-
-    print(f"\nSuccessfully created dataset '{dataset_id}'!")
+    create_dataset(
+        dataset_id=dataset_id,
+        title=title,
+        description=description,
+        publisher=publisher,
+        contact=contact,
+        keywords=keywords,
+        creator=creator,
+        attributions=attributions,
+        theme_name_en=theme_name_en,
+        theme_name_fr=theme_name_fr,
+        identifier=identifier,
+        theme_url=theme_url,
+        spatial=spatial,
+        year_start=year_start,
+        year_end=year_end
+    )

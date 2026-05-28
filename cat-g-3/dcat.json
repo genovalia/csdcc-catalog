@@ -1,0 +1,82 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@id": "",
+  "@type": "dcat:Dataset",
+  "dcterms:identifier": "",
+  "dcterms:language": "en",
+  "dcterms:title": "CAT-G: Soil Data",
+  "dcterms:description": "Soil data from CAT-G.",
+  "dcat:landingPage": "",
+  "dcterms:publisher": {
+    "@id": "https://csdcc.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "CSDCC",
+    "foaf:homepage": "https://csdcc.ca/"
+  },
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "CSDCC",
+    "vcard:hasEmail": {
+      "@id": "mailto:info@csdcc.ca"
+    }
+  },
+  "dcat:keyword": [
+    "CAT-G",
+    "sustainable grazing",
+    "carbon sequestration",
+    "soil microbiome",
+    "greenhouse gas mitigation"
+  ],
+  "dcat:theme": "http://purl.obolibrary.org/obo/AGRO_00000426",
+  "dcat:distribution": [],
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2023"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2027"
+    }
+  },
+  "dcterms:spatial": "Canada",
+  "dcterms:version": "0.1",
+  "dcterms:license": "",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/RestrictedAccess",
+  "dcterms:creator": {
+    "@type": "foaf:Organization",
+    "foaf:name": "CAT-G Project",
+    "foaf:homepage": "https://cat-g.ca/",
+    "@id": "https://cat-g.ca/"
+  },
+  "prov:qualifiedAttribution": [
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0002-4110-1516",
+        "@type": "foaf:Person",
+        "foaf:name": "James Cahill"
+      },
+      "dcat:hadRole": "principalInvestigator"
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0001-5506-4309",
+        "@type": "foaf:Person",
+        "foaf:name": "Carolyn Fitzsimmons"
+      },
+      "dcat:hadRole": "principalInvestigator"
+    }
+  ]
+}

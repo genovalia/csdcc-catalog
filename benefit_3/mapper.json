@@ -26,8 +26,8 @@
       }
     },
     "species": {
-      "type": "ncbi",
-      "path": "'dcat:theme'"
+      "type": "literal",
+      "value": "host-microbiome interaction"
     },
     "temporal": {
       "year_begin": {
@@ -88,7 +88,7 @@
     },
     "species": {
       "type": "literal",
-      "value": ""
+      "value": "interaction hôte-microbiome"
     },
     "temporal": {
       "year_begin": {

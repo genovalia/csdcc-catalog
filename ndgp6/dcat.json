@@ -17,16 +17,16 @@
   "dcterms:description": "Data schema for the pedigree file layout for the Leveraging Genomics To Achieve Dairy Net-Zero (NDGP).",
   "dcat:landingPage": "",
   "dcterms:publisher": {
-    "@id": "https://csdcc.ca/",
+    "@id": "https://genovalia.ulaval.ca/",
     "@type": "foaf:Organization",
-    "foaf:name": "CSDCC",
-    "foaf:homepage": "https://csdcc.ca/"
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
   },
   "dcat:contactPoint": {
     "@type": "vcard:Kind",
-    "vcard:fn": "CSDCC",
+    "vcard:fn": "Genovalia",
     "vcard:hasEmail": {
-      "@id": "mailto:info@csdcc.ca"
+      "@id": "mailto:genovalia@ulaval.ca"
     }
   },
   "dcat:keyword": [

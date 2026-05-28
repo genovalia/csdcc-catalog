@@ -14,19 +14,19 @@
   "dcterms:identifier": "",
   "dcterms:language": "en",
   "dcterms:title": "PeaCE",
-  "dcterms:description": "Climate smart agriculture and food systems – interdisciplinary challenge teams (csafs-ict) application form.",
+  "dcterms:description": "Climate smart agriculture and food systems \u2013 interdisciplinary challenge teams (csafs-ict) application form.",
   "dcat:landingPage": "",
   "dcterms:publisher": {
-    "@id": "https://csdcc.ca/",
+    "@id": "https://genovalia.ulaval.ca/",
     "@type": "foaf:Organization",
-    "foaf:name": "CSDCC",
-    "foaf:homepage": "https://csdcc.ca/"
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
   },
   "dcat:contactPoint": {
     "@type": "vcard:Kind",
-    "vcard:fn": "CSDCC",
+    "vcard:fn": "Genovalia",
     "vcard:hasEmail": {
-      "@id": "mailto:info@csdcc.ca"
+      "@id": "mailto:genovalia@ulaval.ca"
     }
   },
   "dcat:keyword": [

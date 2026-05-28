@@ -17,16 +17,16 @@
   "dcterms:description": "Standard calibration curve of L-Lactic acid is constructed. Absorbance of Blank wells are initially taken and subtracted from Absorbance values obtained by adding samples at that particular wavelength. Reference is considered as the absorbance of sample with 0 concentration of L-Lactic acid and is subtracted from sample absorbance to get the actual absorbance. Based on the obtained values of actual absorbance, the concentration of L-Lactic acid is determined in samples from the calibration curve.",
   "dcat:landingPage": "",
   "dcterms:publisher": {
-    "@id": "https://csdcc.ca/",
+    "@id": "https://genovalia.ulaval.ca/",
     "@type": "foaf:Organization",
-    "foaf:name": "CSDCC",
-    "foaf:homepage": "https://csdcc.ca/"
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
   },
   "dcat:contactPoint": {
     "@type": "vcard:Kind",
-    "vcard:fn": "CSDCC",
+    "vcard:fn": "Genovalia",
     "vcard:hasEmail": {
-      "@id": "mailto:info@csdcc.ca"
+      "@id": "mailto:genovalia@ulaval.ca"
     }
   },
   "dcat:keyword": [

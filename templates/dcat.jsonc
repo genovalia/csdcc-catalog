@@ -26,17 +26,17 @@
   "dcat:landingPage": "",
   // The entity responsible for making the dataset available.
   "dcterms:publisher": {
-    "@id": "https://csdcc.ca/",
+    "@id": "https://genovalia.ulaval.ca/",
     "@type": "foaf:Organization",
-    "foaf:name": "CSDCC",
-    "foaf:homepage": "https://csdcc.ca/"
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
   },
   // Contact information that can be used for sending comments about the dataset.
   "dcat:contactPoint": {
     "@type": "vcard:Kind",
-    "vcard:fn": "CSDCC",
+    "vcard:fn": "Genovalia",
     "vcard:hasEmail": {
-      "@id": "mailto:csdcc.ca"
+      "@id": "mailto:genovalia@ulaval.ca"
     }
   },
   // A list of keywords (tags) describing the dataset.

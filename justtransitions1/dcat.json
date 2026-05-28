@@ -17,16 +17,16 @@
   "dcterms:description": "Schema describing the social survey questionnaire.",
   "dcat:landingPage": "",
   "dcterms:publisher": {
-    "@id": "https://csdcc.ca/",
+    "@id": "https://genovalia.ulaval.ca/",
     "@type": "foaf:Organization",
-    "foaf:name": "CSDCC",
-    "foaf:homepage": "https://csdcc.ca/"
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
   },
   "dcat:contactPoint": {
     "@type": "vcard:Kind",
-    "vcard:fn": "CSDCC",
+    "vcard:fn": "Genovalia",
     "vcard:hasEmail": {
-      "@id": "mailto:info@csdcc.ca"
+      "@id": "mailto:genovalia@ulaval.ca"
     }
   },
   "dcat:keyword": [
@@ -83,7 +83,7 @@
       "prov:agent": {
         "@id": "https://orcid.org/0000-0002-9843-4055",
         "@type": "foaf:Person",
-        "foaf:name": "Stefania Pizzirani"
+        "foaf:name": "Stefania\u00a0Pizzirani"
       },
       "dcat:hadRole": "principalInvestigator"
     }

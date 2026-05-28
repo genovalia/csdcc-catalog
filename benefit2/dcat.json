@@ -17,22 +17,22 @@
   "dcterms:description": "Metadata associated with the bacterial strains deposited in the Canadian Collection of Agricultural Soil Microbes (CCASM).",
   "dcat:landingPage": "",
   "dcterms:publisher": {
-    "@id": "https://csdcc.ca/",
+    "@id": "https://genovalia.ulaval.ca/",
     "@type": "foaf:Organization",
-    "foaf:name": "CSDCC",
-    "foaf:homepage": "https://csdcc.ca/"
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
   },
   "dcat:contactPoint": {
     "@type": "vcard:Kind",
-    "vcard:fn": "CSDCC",
+    "vcard:fn": "Genovalia",
     "vcard:hasEmail": {
-      "@id": "mailto:info@csdcc.ca"
+      "@id": "mailto:genovalia@ulaval.ca"
     }
   },
   "dcat:keyword": [
     "BENEFIT",
     "microbiome genomics",
-    "plant–microbe interactions",
+    "plant\u2013microbe interactions",
     "crop productivity",
     "greenhouse gas mitigation"
   ],

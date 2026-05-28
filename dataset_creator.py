@@ -165,10 +165,10 @@ def create_dataset_interactive():
     publisher = questionary.select("Publisher:", choices=pub_choices).ask()
     if publisher == "NEW":
         publisher = {
-            "@id": questionary.text("Publisher ID (URL):", default="https://csdcc.ca/").ask(),
+            "@id": questionary.text("Publisher ID (URL):", default="https://genovalia.ulaval.ca/").ask(),
             "@type": "foaf:Organization",
-            "foaf:name": questionary.text("Publisher Name:", default="CSDCC").ask(),
-            "foaf:homepage": questionary.text("Publisher Homepage:", default="https://csdcc.ca/").ask()
+            "foaf:name": questionary.text("Publisher Name:", default="Genovalia").ask(),
+            "foaf:homepage": questionary.text("Publisher Homepage:", default="https://genovalia.ulaval.ca/").ask()
         }
 
     # Contact Point
@@ -179,9 +179,9 @@ def create_dataset_interactive():
     if contact == "NEW":
         contact = {
             "@type": "vcard:Kind",
-            "vcard:fn": questionary.text("Contact Name:", default="CSDCC").ask(),
+            "vcard:fn": questionary.text("Contact Name:", default="Genovalia").ask(),
             "vcard:hasEmail": {
-                "@id": f"mailto:{questionary.text('Contact Email:', default='csdcc.ca').ask()}"
+                "@id": f"mailto:{questionary.text('Contact Email:', default='genovalia@ulaval.ca').ask()}"
             }
         }
 

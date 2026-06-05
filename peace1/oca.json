@@ -186,7 +186,7 @@
             "capture_base": "ELyfXt8wfuLYql3IABdjsuwtgnRaobepNGsbWbPTmqMl",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
-            "description": "CLIMATE SMART AGRICULTURE AND FOOD SYSTEMS – INTERDISCIPLINARY CHALLENGE TEAMS (CSAFS-ICT) APPLICATION FORM",
+            "description": "CLIMATE SMART AGRICULTURE AND FOOD SYSTEMS â€“ INTERDISCIPLINARY CHALLENGE TEAMS (CSAFS-ICT) APPLICATION FORM",
             "name": "PeaCE"
           }
         ],
@@ -206,7 +206,7 @@
             "protein_content": "%",
             "soil_moisture": "%",
             "soil_nutrient_content": "varies",
-            "soil_temperature": "°C",
+            "soil_temperature": "Â°C",
             "yield": "kg/ha"
           }
         }

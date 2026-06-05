@@ -1067,7 +1067,7 @@
                 "A few times per month": "FTM",
                 "A few times per year (e.g., special occasions)": "FTY",
                 "At least once a week": "OW",
-                "I don’t grow or raise any of my own food": "DGR",
+                "I donâ€™t grow or raise any of my own food": "DGR",
                 "Most days": "MD",
                 "Never": "NV",
                 "Once per month": "ON"
@@ -2071,7 +2071,7 @@
               "A few times per month",
               "A few times per year (e.g., special occasions)",
               "At least once a week",
-              "I don’t grow or raise any of my own food",
+              "I donâ€™t grow or raise any of my own food",
               "Most days",
               "Never",
               "Once per month"
@@ -2296,7 +2296,7 @@
               "eth_caribbean": "Identifies as Caribbean",
               "eth_east_asian": "Identifies as East Asian",
               "eth_european": "Identifies as European",
-              "eth_indigenous": "Identifies as Indigenous (e.g., First Nations, Inuit, Métis)",
+              "eth_indigenous": "Identifies as Indigenous (e.g., First Nations, Inuit, MÃ©tis)",
               "eth_latin_american": "Identifies as Latin, Central, or South American",
               "eth_middle_eastern": "Identifies as Middle Eastern, Arab, or North African",
               "eth_oceania": "Identifies as Oceanian",
@@ -2332,12 +2332,12 @@
               "grocery_availability": "Cellular agriculture products will be widely available in most grocery stores",
               "heard_cellular_agriculture": "Have you heard of cellular agriculture before?",
               "home_production_possible": "People will be able to produce cellular agriculture food at home",
-              "hope_tech": "Hope for the future lies more in people’s actions than in technology",
+              "hope_tech": "Hope for the future lies more in peopleâ€™s actions than in technology",
               "household_composition": "Household composition",
               "household_composition_other": "Other household composition (please specify)",
               "household_income": "Total household income before tax",
               "human_caused_climate": "Evidence for human\\-caused climate change is incomplete",
-              "human_impacts": "Human activities are destabilizing Earth’s systems",
+              "human_impacts": "Human activities are destabilizing Earthâ€™s systems",
               "imp_animal_welfare": "Animal welfare conditions are an important factor",
               "imp_antibiotic_free": "Absence of antibiotics or growth hormones is an important factor",
               "imp_cost": "Cost is an important factor when purchasing animal\\-sourced foods",
@@ -2374,7 +2374,7 @@
               "only_wealthy_access": "Only wealthier people will be able to afford cellular agriculture products",
               "plant_burger_mushroom": "Compared to cellular agriculture, how comfortable are you with plant\\-based burgers made from mushroom protein?",
               "plant_burger_soy": "Compared to cellular agriculture, how comfortable are you with plant\\-based burgers made from soy protein?",
-              "political_scale": "Political orientation on a conservative–liberal scale.",
+              "political_scale": "Political orientation on a conservativeâ€“liberal scale.",
               "political_scale_other": "Other political orientation (please specify)",
               "post": "Post",
               "postal_prefix": "First three characters of postal code",
@@ -2390,7 +2390,7 @@
               "priority_other_specified": "Other (specify)",
               "priority_vegan_shift": "Prioritize encouraging a shift toward vegan or vegetarian diets",
               "priority_wildlife_habitat": "Prioritize protecting wildlife habitat from agricultural impacts",
-              "progress_tech": "A country’s progress can be measured by its technological development.",
+              "progress_tech": "A countryâ€™s progress can be measured by its technological development.",
               "ref": "Reference source",
               "reject_cell_icecream": "Cellular agriculture ice cream should not exist or be adopted",
               "reject_cell_nuggets": "Cellular agriculture chicken nuggets should not exist or be adopted",
@@ -2414,7 +2414,7 @@
               "source_backyard_animals": "Raise animals on own property",
               "source_butcher_shop": "Obtain animal\\-sourced foods from butcher shops",
               "source_direct_from_farms": "Obtain animal\\-sourced foods directly from farms",
-              "source_farmers_market": "Obtain animal\\-sourced foods from farmers’ markets or farm stands",
+              "source_farmers_market": "Obtain animal\\-sourced foods from farmersâ€™ markets or farm stands",
               "source_food_bank": "Obtain animal\\-sourced foods from food banks",
               "source_grocery_superstore": "Obtain animal\\-sourced foods from grocery stores or superstores",
               "source_hunting_fishing": "Obtain animal\\-sourced foods through hunting or fishing",
@@ -2449,8 +2449,8 @@
               "work_food_education": "Involved in food\\-related education as part of your job or volunteer work",
               "work_food_processing": "Involved in food processing activities as part of your job or volunteer work",
               "work_food_retail": "Involved in food retail (e.g., grocery stores) as part of your job or volunteer work",
-              "work_none": "Selected ‘none of the above’ for involvement in food\\-related activities",
-              "work_prefer_not_say": "Selected ‘prefer not to say’ for involvement in food\\-related activities"
+              "work_none": "Selected â€˜none of the aboveâ€™ for involvement in food\\-related activities",
+              "work_prefer_not_say": "Selected â€˜prefer not to sayâ€™ for involvement in food\\-related activities"
             }
           }
         ],
@@ -2809,7 +2809,7 @@
                 "Once per month",
                 "A few times per year (e.g., special occasions)",
                 "Never",
-                "I don’t grow or raise any of my own food"
+                "I donâ€™t grow or raise any of my own food"
               ],
               "heard_cellular_agriculture": [
                 "Yes",

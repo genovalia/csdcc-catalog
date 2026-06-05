@@ -188,12 +188,12 @@
           "capture_base": "EEZggdoZC4ROHUDK7Zs5o4koy9e6qGmhsOba6s5z2-Ug",
           "type": "spec/overlays/unit/1.1",
           "attribute_unit": {
-            "Qubit_concentration": "ng/無",
-            "Take3_concentration": "ng/無",
+            "Qubit_concentration": "ng/繕L",
+            "Take3_concentration": "ng/繕L",
             "Target_amount": "ng",
-            "Target_volume": "無",
+            "Target_volume": "繕L",
             "Total_DNA-RNA_amount": "ng",
-            "Volume": "無"
+            "Volume": "繕L"
           }
         }
       }
